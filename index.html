@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title -->
+        <title>Google Maps API Prueba 1</title> <!-- aqui -->
+
+        <!-- Settings -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="styles/bootstrap.min.css"/>
+        <link rel="stylesheet" href="styles/Style.css"/>
+
+        <!-- Scripts -->
+        <script src="scripts/jquery-2.2.4.js"> </script>
+        <script src="scripts/bootstrap.min.js"> </script>
+        <script src="scripts/App.js"> </script>
+    </head>
+    <body>
+        <input id="pac-input" class="controls" type="text"
+        placeholder="Introduce una ubicación">
+        <div id="type-selector" class="controls">
+          <input type="radio" name="type" id="changetype-all" checked="checked">
+          <label for="changetype-all">Todos </label>
+
+          <input type="radio" name="type" id="changetype-establishment">
+          <label for="changetype-establishment">Establecimientos </label>
+
+          <input type="radio" name="type" id="changetype-address">
+          <label for="changetype-address">Direcciones </label>
+
+          <input type="radio" name="type" id="changetype-geocode">
+          <label for="changetype-geocode">Geocódigos</label>
+            
+          <input type="radio" name="type" id="changetype-radio">
+          <label for="changetype-radio">En radio</label>
+        </div>
+        <div id="map"></div>
+    </body>
+    <footer>
+    </footer>
+    <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcUiD-WFZR5TVypnFv067CKIIjF4v7ptA&libraries=places,drawing&callback=initMap">
+    </script>
+    <script>
+        startMap();
+    </script>
+</html>
